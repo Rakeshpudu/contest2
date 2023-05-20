@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <div id="nav-bar">
+        <div class="nav-left">
+            <h3 style="text-align:left;color:aqua;margin:10px;">Library System</h3>
+        </div>
+        <div class="nav-right">
+                <a href="#book-section">Books</a>
+                <a href="#form-section">Register</a>
+               
+        </div>
+    </div>
+    
+    <!-- book-details -->
+    <div class="library-1" id="book-section">
+        
+        <div class="books">
+            <h1>Books</h1>
+        <table border="1"  style="width: 100%; height: 100%">
+            <tr>
+                <th>Book ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Gender</th>
+                <th>Availablity</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <table border="1" cellspacing="0">
+                        <tr>
+                            <a href="https://openlibrary.org/works/OL17860744W/A_Court_of_Mist_and_Fury">Court of Mist</a>
+                        </tr>
+                        <tr>
+                            <td>Publication Date:2016</td>                           
+                        </tr>
+                        <td>Pages Count:200</td>
+                        <tr>
+                            <td>ISBN:978-1619634466</td>
+                        </tr>               
+                    </table>
+                </td>
+                <td>Sarah.j</td>
+                <td>Female</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <table border="1" cellspacing="0">
+                        <tr>
+                            <a href="https://openlibrary.org/works/OL1992198W/In_Cold_Blood">In Cold Blood</a>
+                        </tr>
+                        <tr>
+                            <td>Publication Date:1959</td>                           
+                        </tr>
+                        <td>Pages Count:343</td>
+                        <tr>
+                            <td>ISBN : 0-679-74558-0</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Truman</td>
+                <td>Male</td>
+                <td>Not Available</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    <table border="1" cellspacing="0">
+                        <tr>
+                            <a href="https://openlibrary.org/works/OL21178912W/El_Pr%C3%ADncipe_Cruel">The Cruel Prince</a>
+                        </tr>
+                        <tr>
+                            <td>Publication Date:2018</td>                           
+                        </tr>
+                        <td>Pages Count:385</td>
+                        <tr>
+                            <td> ISBN 13:9780316310314</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Holly Black</td>
+                <td>Male</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>
+                    <table border="1" cellspacing="0">
+                        <tr>
+                            <a href="https://www.amazon.in/Rich-Dad-Poor-Middle-Anniversary/dp/1612681131/ref=asc_df_1612681131/?tag=googleshopdes-21&linkCode=df0&hvadid=586333930484&hvpos=&hvnetw=g&hvrand=6893969166312247570&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9299745&hvtargid=pla-1619920072976&psc=1">Rich Dad Poor Dad</a>
+                        </tr>
+                        <tr>
+                            <td>Publication Date:1997</td>                           
+                        </tr>
+                        <td>Pages Count:429</td>
+                        <tr>
+                            <td> ISBN: 0-446-67745-0</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Kiyosaki</td>
+                <td>Male</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>
+                    <table border="1" cellspacing="0">
+                        <tr>
+                            <a href="https://openlibrary.org/books/OL47307686M/Oliver_Twist>The Cruel Prince">Oliver Twist</a>
+                        </tr>
+                        <tr>
+                            <td>Publication Date:1838</td>                           
+                        </tr>
+                        <td>Pages Count:206</td>
+                        <tr>
+                            <td>  ISBN 10: 1785996258</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Charles Dickens</td>
+                <td>Male</td>
+                <td>Not Available</td>
+            </tr>
+        </table>
+        </div>
+    
+    </div>
+    <div class="library-2" id="form-section">
+        <div class="form">
+            <form action="info.js">
+                <h1>Register</h1><br>
+                <div class="label">
+                    <label for="name">First Name:</label><br>
+                    <input type="text" name="name" placeholder="First Name" required ><br>
+                    <label for="name">Last Name:</label><br>
+                    <input type="text" placeholder="Last Name"name="last-name"required><br>
+                    <label for="dob">Date of Birth:</label><br>
+                    <input type="date" placeholder="Date of Birth" name="last-name"required><br>
+                    <label for="age">Age:</label><br>
+                    <input type="number" placeholder="Age" name="age"min="5" max="100" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" placeholder="Email" name="email"required ><br>
+                    <label for="password">Password:</label><br>
+                    <input type="password" placeholder="password"name="password"required><br>
+                    <label for="password">Confirm Password:</label><br>
+                    <input type="password" placeholder="Confirm passwoed" required><br>
+                    
+                </div>
+                <button type="submit" id="btn">Register</button>
+
+
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
